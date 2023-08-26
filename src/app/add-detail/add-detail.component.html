@@ -1,0 +1,62 @@
+<div class="split left">
+<h1 name="h1">{{message1}}</h1>
+<h2>Create a Client</h2>
+<p><b>Please fill in this form to create a client</b></p>
+<hr style="width:45%;text-align:left;margin-left:0">
+<div>
+    <label><b>Name:</b></label><br>
+    <input type="text" name="Name" class="border" [(ngModel)]="Name"/>
+</div>
+<br>
+<div>
+    <label><b>Email:</b></label><br>
+    <input type="Email" name="Email" class="border" [(ngModel)]="Email"/>
+</div>
+<br>
+<div>
+    <label><b>Address:</b></label><br>
+    <input type="text" name="Address" class="border" [(ngModel)]="Address"/>
+</div>
+<br>
+<div>
+    <label><b>Password:</b></label><br>
+    <input type="Password" name="Password" class="border"  [(ngModel)]="Password"/>
+</div>
+<br>
+<div>
+    <label><b>RepeatPassword:</b></label><br>
+    <input type="Password" name="RepeatPassword" class="border" [(ngModel)]="RepeatPassword"/>
+</div>
+
+<hr style="width:45%;text-align:left;margin-left:0">
+<button (click)="addClient()" name="addClient" class="border">Add Client</button><br><br>
+<button onClick="window.location.reload();" class="border">Clear all details</button>
+</div>
+
+<div class="split right">
+    <h1 name="h2">{{message2}}</h1>
+    <h2>Create a meeting Schedule</h2>
+    <hr style="width:45%;text-align:left;margin-left:0">
+    <div>
+        <label><b>Meeting Topic:</b></label><br>
+        <input type="text" name="MeetingTopic" class="border"  [(ngModel)]="MeetingTopic"/>
+    </div>
+    <br>
+    <div>
+        <label><b>Number of People:</b></label><br>
+        <input type="Email"  name="NumberofPeople" class="border" [(ngModel)]="Noofpeople"/>
+    </div>
+    <br>
+    <div>
+        <label><b>Meeting Date:</b></label><br>
+        <input type="date" name="MeetingDate" class="border" [(ngModel)]="Meetingdate"/>
+    </div>
+    <br>
+    <div>
+        <label><b>Meeting Time:</b></label><br>
+        <input type="time" name="MeetingTime" class="border" [(ngModel)]="Meetingtime"/>
+    </div>
+    <hr style="width:45%;text-align:left;margin-left:0">
+    <button (click)="addMeeting()" name="addMeeting" class="border">Add Meeitng</button> <br><br>
+    <button onClick="window.location.reload();" class="border">Clear all details</button>
+</div>
